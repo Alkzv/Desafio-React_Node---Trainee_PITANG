@@ -1,0 +1,14 @@
+{
+  "name": "Desafio-React_Node---Trainee_PITANG",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "repository": "https://github.com/Alkzv/Desafio-React_Node---Trainee_PITANG.git",
+  "author": "Alkzv <lucasalkimim98@gmail.com>",
+  "license": "MIT",
+  "workspaces": {
+    "packages": [
+      "packages/**"
+    ]
+  }
+}
