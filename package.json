@@ -6,19 +6,12 @@
   "repository": "https://github.com/Alkzv/Desafio-React_Node---Trainee_PITANG.git",
   "author": "Alkzv <lucasalkimim98@gmail.com>",
   "license": "MIT",
+  "devDependencies": {
+    "@monorepo/eslint-config-node": "*"
+  },
   "workspaces": {
     "packages": [
       "packages/**"
     ]
-  },
-  "scripts": {
-    "lint": "./node_modules/.bin/eslint ."
-  },
-  "devDependencies": {
-    "eslint": "^7.32.0",
-    "eslint-config-standard": "^16.0.3",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.2.0"
   }
 }

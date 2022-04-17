@@ -1,16 +1,3 @@
-module.exports = {
-  env: {
-    browser: true,
-    es2021: true,
-    node: true
-  },
-  extends: [
-    'standard'
-  ],
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module'
-  },
-  rules: {
-  }
-}
+const config = require('@monorepo/eslint-config-node')
+
+module.exports = config
