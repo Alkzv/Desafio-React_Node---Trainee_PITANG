@@ -1,12 +1,13 @@
 import { Router } from 'express'
-import { controller } from '../controller/ScheduleController.js'
+import ScheduleController from '../controller/ScheduleController.js'
 
+const scheduleController = new ScheduleController()
 const router = Router()
 
-router.get('/schedule', controller.getAll)
-router.get('/schedule/:id', controller.getOne)
-router.post('/schedule', controller.create)
-router.put('/schedule/:id', controller.update)
-router.delete('/schedule/:id', controller.remove)
+router.get('/schedule', scheduleController.getAll)
+router.get('/schedule/:id', scheduleController.getOne)
+router.post('/schedule', scheduleController.create)
+router.put('/schedule/:id', scheduleController.update)
+router.delete('/schedule/:id', scheduleController.remove)
 
-export { router }
+export default router
