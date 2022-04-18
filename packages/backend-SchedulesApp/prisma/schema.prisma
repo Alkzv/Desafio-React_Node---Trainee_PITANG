@@ -15,7 +15,7 @@ model Schedule {
   name  String
   birthDate  DateTime
   scheduleDate DateTime
-  yearField     DateTime	
+  scheduleTime     DateTime	
   realizedSchedule Boolean? @default(false)
   descriptionSchedule String
 }
