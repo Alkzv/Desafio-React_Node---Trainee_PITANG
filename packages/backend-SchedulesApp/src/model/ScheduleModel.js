@@ -1,5 +1,3 @@
-class ScheduleModel {
-
-}
+class ScheduleModel {}
 
 export default ScheduleModel
