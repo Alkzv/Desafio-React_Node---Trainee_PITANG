@@ -1,22 +1,7 @@
-import Controller from '../controller/Controller.js'
+import Controller from './Controller.js'
 class ScheduleController extends Controller {
-  getAll (request, response) {
-  }
-
-  getOne (request, response) {
-
-  }
-
-  create (request, response) {
-  }
-
-  remove (request, response) {
-
-  }
-
-  update (request, response) {
-
+  constructor () {
+    super('Schedule')
   }
 }
-
 export default ScheduleController

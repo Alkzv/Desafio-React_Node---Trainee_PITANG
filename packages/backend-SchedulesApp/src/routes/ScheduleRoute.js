@@ -4,10 +4,10 @@ import ScheduleController from '../controller/ScheduleController.js'
 const scheduleController = new ScheduleController()
 const router = Router()
 
-router.get('/schedule', scheduleController.getAll)
-router.get('/schedule/:id', scheduleController.getOne)
-router.post('/schedule', scheduleController.create)
-router.put('/schedule/:id', scheduleController.update)
-router.delete('/schedule/:id', scheduleController.remove)
+router.get('/schedule', scheduleController.getAll.bind(scheduleController))
+router.get('/schedule/:id', scheduleController.getOne.bind(scheduleController))
+router.post('/schedule', scheduleController.create.bind(scheduleController))
+router.put('/schedule/:id', scheduleController.update.bind(scheduleController))
+router.delete('/schedule/:id', scheduleController.remove.bind(scheduleController))
 
 export default router
