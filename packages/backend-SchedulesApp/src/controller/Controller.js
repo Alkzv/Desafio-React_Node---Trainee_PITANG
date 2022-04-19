@@ -5,11 +5,12 @@ class Controller {
     this.client = prismaClient[model]
   }
 
-  getAll (request, response) {
-  }
-
-  getOne (request, response) {
-
+  async getAll (request, response) {
+    try {
+      response.status(200).json(await this.client.findMany())
+    } catch (error) {
+      return response.status(400).json({ message: 'Unsuccessful Listing' })
+    }
   }
 
   async create (request, response) {

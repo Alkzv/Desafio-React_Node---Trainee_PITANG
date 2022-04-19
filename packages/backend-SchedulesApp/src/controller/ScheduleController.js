@@ -20,6 +20,19 @@ class ScheduleController extends Controller {
     }
     super.create(request, response)
   }
+
+  async getAll (request, response, isOrderByAsc) {
+    console.log(request.body)
+    try {
+      response.status(200).json(await this.client.findMany({
+        orderBy: {
+          schedule: isOrderByAsc ? 'asc' : 'desc'
+        }
+      }))
+    } catch (error) {
+      return response.status(400).json({ message: 'Unsuccessful Listing' })
+    }
+  }
 }
 
 export default ScheduleController
