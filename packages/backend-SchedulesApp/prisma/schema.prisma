@@ -14,8 +14,7 @@ model Schedule {
   id    String  @id @default(auto()) @map("_id") @db.ObjectId
   name  String
   birthDate  DateTime
-  scheduleDate DateTime
-  scheduleTime     DateTime	
+  schedule DateTime
   realizedSchedule Boolean? @default(false)
   descriptionSchedule String
 }
