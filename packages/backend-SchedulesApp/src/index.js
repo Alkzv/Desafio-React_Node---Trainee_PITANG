@@ -1,6 +1,7 @@
 import express from 'express'
 import cors from 'cors'
 import routes from './routes/routes.js'
+import helmet from 'helmet'
 
 const app = express()
 
@@ -8,9 +9,7 @@ app.use(express.json())
 
 app.use(cors())
 
-app.use((response, request, next) => { // Middleware
-  next()
-})
+app.use(helmet())
 
 app.use('/api', routes)
 
