@@ -10,6 +10,7 @@ import {
   Burger,
   Group,
   useMantineTheme,
+  Center,
 } from "@mantine/core";
 import { MainLinks } from "./mainLinks";
 import { Outlet } from "react-router-dom";
@@ -44,13 +45,12 @@ const Layout = () => {
       aside={
         <MediaQuery smallerThan="sm" styles={{ display: "none" }}>
           <Aside p="md" hiddenBreakpoint="sm" width={{ sm: 200, lg: 300 }}>
-            <Text>Application sidebar</Text>
           </Aside>
         </MediaQuery>
       }
       footer={
         <Footer height={60} p="md">
-          Application footer
+          <Center><Text weight={400}><i>Copyright 2022 by Lucas Alkimim Chaves. All Rights Reserved.</i></Text></Center>
         </Footer>
       }
       header={
@@ -89,14 +89,13 @@ const Layout = () => {
               weight={700}
               style={{ fontFamily: "Greycliff CF, sans-serif" }}
             >
-              Application header
+              Application Schedules
             </Text>
             </Group>
           </div>
         </Header>
       }
     >
-      <Text>Resize app to see responsive navbar in action</Text>
       <Outlet />
     </AppShell>
   );
