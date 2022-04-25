@@ -12,7 +12,7 @@ import {
 import { useState, useEffect } from "react";
 import { useModals } from "@mantine/modals";
 import Moment from "moment";
-import axios from "../../services/Api";
+import axios from "../../services/api";
 import { TextInput, Badge } from "@mantine/core";
 import { Edit, Search, Trash } from "tabler-icons-react";
 import { Checkbox } from "@mantine/core";

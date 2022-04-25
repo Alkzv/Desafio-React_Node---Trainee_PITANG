@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import { useFormik } from "formik";
 import "react-datepicker/dist/react-datepicker.css";
-import axios from "../../services/Api";
+import axios from "../../services/api";
 import { showNotification } from "@mantine/notifications";
 
 const RegisterSchedule = () => {
