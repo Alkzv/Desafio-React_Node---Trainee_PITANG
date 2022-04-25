@@ -60,8 +60,12 @@ horário.</i>
  
  <h3>Aplicação em execução</h3>
 
-<ul><li>Vídeo de apresentação do sistema desenvolvido e em funcionamento. Além, de algumas informações de execução e etc. Link:<li></ul>
+<ul>
+ <li>Vídeo de apresentação do sistema desenvolvido e em funcionamento. Além, de algumas informações de execução e etc. Link: https://youtu.be/yTBp_l1bQTM</li>
+ </ul>
 
-
-
+<h3> Author </h3>
+ 
+ Lucas Alkimim Chaves
+ Email para contato: l239799@dac.unicamp.br
 
