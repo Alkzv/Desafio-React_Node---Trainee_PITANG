@@ -54,13 +54,13 @@ horário.</i>
 
 <h3>Organização no desenvolvimento<h3>
 
-<ol> 
+<ul> 
 <li>Utilizou-se o Asana para a organização das userStories. Link: https://app.asana.com/share/dacunicamp/desafio-pitang-trainee/73259978660841/230e9a46a00ab773230f35ced6eaa64e</li>
- </ol>
+ </ul>
  
  <h3>Aplicação em execução</h3>
 
-<ol><li>Vídeo de apresentação do sistema desenvolvido e em funcionamento. Além, de algumas informações de execução e etc. Link:<li></ol>
+<ul><li>Vídeo de apresentação do sistema desenvolvido e em funcionamento. Além, de algumas informações de execução e etc. Link:<li></ul>
 
 
 
