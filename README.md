@@ -51,3 +51,17 @@ horário.</i>
  <li>O cumprimento de todas as regras estabelecidas.</li>
  <li>A criação de testes.</li>
 </ol>
+
+<h3>Organização no desenvolvimento<h3>
+
+<ol> 
+<li>Utilizou-se o Asana para a organização das userStories. Link: https://app.asana.com/share/dacunicamp/desafio-pitang-trainee/73259978660841/230e9a46a00ab773230f35ced6eaa64e</li>
+ </ol>
+ 
+ <h3>Aplicação em execução</h3>
+
+<ol><li>Vídeo de apresentação do sistema desenvolvido e em funcionamento. Além, de algumas informações de execução e etc. Link:<li></ol>
+
+
+
+
