@@ -12,7 +12,7 @@ const ThemeDark = () => {
       onClick={() => toggleColorScheme()}
       title="Toggle color scheme"
     >
-      {dark ? <ThemeIcon size="lg" variant="gradient" gradient={{ from: '#ed6ea0', to: 'red', deg: 35 }}><Sun size={20} /></ThemeIcon> : <ThemeIcon size="lg" variant="gradient" gradient={{ from: '#ed6ea0', to: 'red', deg: 35 }}><MoonStars size={20} /></ThemeIcon>}
+      {dark ? <ThemeIcon size="lg" variant="gradient" gradient={{ from: 'indigo', to: 'cyan' }}><Sun size={20} /></ThemeIcon> : <ThemeIcon size="lg" variant="gradient" gradient={{ from: 'indigo', to: 'cyan' }}><MoonStars size={20} /></ThemeIcon>}
     </ActionIcon>
  
   );

@@ -1,6 +1,6 @@
 import { MantineProvider, ColorSchemeProvider} from '@mantine/core';
 import { useHotkeys, useLocalStorage } from '@mantine/hooks';
-import Routes from "../routes/routes";
+import Routes from "../routes/Routes";
 
 const ControllerTheme = () => {
     const [colorScheme, setColorScheme] = useLocalStorage({

@@ -1,10 +1,10 @@
 import React from 'react';
-import { GitPullRequest, AlertCircle, Messages, Database } from 'tabler-icons-react';
+import {Home, Notebook, List, InfoCircle } from 'tabler-icons-react';
 import { ThemeIcon, UnstyledButton, Group, Text } from '@mantine/core';
 import { useNavigate } from 'react-router-dom';
 
 
-function MainLink({ icon, label, path }) {
+function OptionsMenuLink({ icon, label, path }) {
   const navigate = useNavigate();
   return (
     <UnstyledButton
@@ -23,7 +23,7 @@ function MainLink({ icon, label, path }) {
       })}
     >
       <Group>
-      <ThemeIcon size="lg" variant="gradient" gradient={{ from: '#ed6ea0', to: 'red', deg: 35 }}>
+      <ThemeIcon size="lg" variant="gradient" gradient={{ from: 'indigo', to: 'cyan' }}>
           {icon}
         </ThemeIcon>
 
@@ -34,13 +34,13 @@ function MainLink({ icon, label, path }) {
 }
 
 const datas = [
-  { icon: <GitPullRequest size={20} />, label: 'Home', path: '/'},
-  { icon: <AlertCircle size={20} />, label: 'Register Schedules',  path: 'schedule/register'},
-  { icon: <Messages size={20} />, label: 'Listing Schedules', path: 'schedule/listing' },
-  { icon: <Database size={20} />, label: 'About',  path: '/about'},
+  { icon: <Home size={20} />, label: 'Inicio', path: '/'},
+  { icon: <Notebook size={20} />, label: 'Registrar Agendamentos',  path: 'schedule/register'},
+  { icon: <List size={20} />, label: 'Listar agendamentos', path: 'schedule/listing' },
+  { icon: <InfoCircle size={20} />, label: 'Sobre',  path: '/about'},
 ];
 
-export function MainLinks() {
-  return <div>{datas.map((data) => <MainLink {...data} key={data.label} />)}</div>;
+export function OptionsMenuLinks() {
+  return <div>{datas.map((data) => <OptionsMenuLink {...data} key={data.label} />)}</div>;
 }
 

@@ -1,9 +1,10 @@
 import {Routes, BrowserRouter, Route} from "react-router-dom";
-import Home from "../pages/home";
+import Home from "../pages/home/Home";
 import Layout from "../components/Layout";
-import ListingSchedule from "../pages/schedulesListing";
-import RegisterSchedule from "../pages/schedulesRegister";
-import About from "../pages/About";
+import ListingSchedule from "../pages/schedulesListing/Schedules";
+import RegisterSchedule from "../pages/schedulesRegister/Register";
+import About from "../pages/about/About";
+
 
 const Router = () => {
     return(

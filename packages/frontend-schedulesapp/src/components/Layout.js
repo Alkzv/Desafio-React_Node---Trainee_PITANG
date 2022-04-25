@@ -11,8 +11,9 @@ import {
   Group,
   useMantineTheme,
   Center,
+  Image,
 } from "@mantine/core";
-import { MainLinks } from "./mainLinks";
+import { OptionsMenuLinks } from "./OptionsMenuLink";
 import { Outlet } from "react-router-dom";
 import ThemeDark from "./ThemeDark";
 
@@ -39,22 +40,31 @@ const Layout = () => {
           hidden={!opened}
           width={{ sm: 200, lg: 300 }}
         >
-          <MainLinks />
+          <OptionsMenuLinks />
         </Navbar>
       }
       aside={
         <MediaQuery smallerThan="sm" styles={{ display: "none" }}>
-          <Aside p="md" hiddenBreakpoint="sm" width={{ sm: 200, lg: 300 }}>
-          </Aside>
+          <Aside
+            p="md"
+            hiddenBreakpoint="sm"
+            width={{ sm: 200, lg: 300 }}
+          ></Aside>
         </MediaQuery>
       }
       footer={
         <Footer height={60} p="md">
-          <Center><Text weight={400}><i>Copyright 2022 by Lucas Alkimim Chaves. All Rights Reserved.</i></Text></Center>
+          <Center>
+            <Text weight={400}>
+              <i>
+                Copyright 2022 by Lucas Alkimim Chaves. All Rights Reserved.
+              </i>
+            </Text>
+          </Center>
         </Footer>
       }
       header={
-        <Header height={70} p="md">
+        <Header height={110} p="md">
           <div
             style={{ display: "flex", alignItems: "center", height: "100%" }}
           >
@@ -72,7 +82,6 @@ const Layout = () => {
               px={12}
               position="apart"
             >
-              {" "}
               <ThemeDark />
             </Group>
             <Group
@@ -80,17 +89,14 @@ const Layout = () => {
               style={{ margin: 500 }}
               position="apart"
             >
-            <Text
-              component="span"
-              align="center"
-              variant="gradient"
-              gradient={{ from: "indigo", to: "cyan", deg: 45 }}
-              size="xl"
-              weight={700}
-              style={{ fontFamily: "Greycliff CF, sans-serif" }}
-            >
-              Application Schedules
-            </Text>
+              <div
+                style={{ width: 210 , marginBottom: "auto", marginRight: "auto" }}>
+                <Image
+                  radius="md"
+                  src="../../logoScheduleApp.png"
+                  alt="Logo ScheduleApp"
+                />
+              </div>
             </Group>
           </div>
         </Header>
