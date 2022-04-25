@@ -15,7 +15,7 @@ import Moment from "moment";
 import axios from "../../services/Api";
 import { TextInput, Badge } from "@mantine/core";
 import { Edit, Search, Trash } from "tabler-icons-react";
-import { Checkbox } from '@mantine/core';
+import { Checkbox } from "@mantine/core";
 import { showNotification } from "@mantine/notifications";
 
 const ListingSchedule = () => {
@@ -33,20 +33,20 @@ const ListingSchedule = () => {
     try {
       const response = await axios.put(`/schedule/${id}`, form);
       axios
-      .get(`/schedule/${value}`)
-      .then((response) => setSchedules(response.data));
+        .get(`/schedule/${value}`)
+        .then((response) => setSchedules(response.data));
       showNotification({
         message: "Editado/adicionado com sucesso!",
         title: "Successo",
       });
 
-      console.log(response)
-    }catch(error){
+      console.log(response);
+    } catch (error) {
       showNotification({
         message: ` Erro ao Editar/adicionar! ERRO: ${error.response.data.message}`,
         title: "Falhou",
       });
-    } 
+    }
     console.log(form);
   };
   const onRemoveSchedule = async (id) => {
@@ -95,13 +95,16 @@ const ListingSchedule = () => {
 
   const [form, setForm] = useState({
     descriptionSchedule: "",
-    realizedSchedule: false
+    realizedSchedule: false,
   });
 
   const onChange = (event) => {
     setForm({
       ...form,
-      [event.target.name]: event.target.type === "checkbox" ? event.target.checked : event.target.value,
+      [event.target.name]:
+        event.target.type === "checkbox"
+          ? event.target.checked
+          : event.target.value,
     });
   };
 
@@ -112,16 +115,26 @@ const ListingSchedule = () => {
         onClose={() => setOpened(false)}
         title="Agendamento realizado ou não? (Status)"
       >
-        <InputWrapper mb={8} id="descriptionSchedule" required label="Descrição do agendamento">
-          <Input id="descriptionSchedule" name="descriptionSchedule" onChange={onChange} value={form.descriptionSchedule} />
+        <InputWrapper
+          mb={8}
+          id="descriptionSchedule"
+          required
+          label="Descrição do agendamento"
+        >
+          <Input
+            id="descriptionSchedule"
+            name="descriptionSchedule"
+            onChange={onChange}
+            value={form.descriptionSchedule}
+          />
         </InputWrapper>
 
         <Checkbox
-        label="Foi realizado o agendamento (Preencha, caso sim!)"
-        mt={8}
-        name="realizedSchedule"
-        onChange={onChange}
-        value={form.realizedSchedule}
+          label="Foi realizado o agendamento (Preencha, caso sim!)"
+          mt={8}
+          name="realizedSchedule"
+          onChange={onChange}
+          value={form.realizedSchedule}
         />
         <Button mt={16} onClick={() => onEditSchedule(opened[1])}>
           Editar/adicionar dados
@@ -177,12 +190,12 @@ const ListingSchedule = () => {
                 <td>{Moment(schedule.schedule).utc().format("DD/MM/YYYY")}</td>
                 <td>{Moment(schedule.schedule).utc().format("HH:mm")}</td>
                 <td>
-                <Badge
-                  variant="gradient"
-                  gradient={{ from: "indigo", to: "cyan" }}
-                >
-                  {schedule.realizedSchedule ? "Yes" : "No"}
-                </Badge>
+                  <Badge
+                    variant="gradient"
+                    gradient={{ from: "indigo", to: "cyan" }}
+                  >
+                    {schedule.realizedSchedule ? "Yes" : "No"}
+                  </Badge>
                 </td>
                 <td>
                   {schedule.descriptionSchedule

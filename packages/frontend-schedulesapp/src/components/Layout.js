@@ -90,7 +90,12 @@ const Layout = () => {
               position="apart"
             >
               <div
-                style={{ width: 210 , marginBottom: "auto", marginRight: "auto" }}>
+                style={{
+                  width: 210,
+                  marginBottom: "auto",
+                  marginRight: "auto",
+                }}
+              >
                 <Image
                   radius="md"
                   src="../../logoScheduleApp.png"
