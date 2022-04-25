@@ -66,6 +66,6 @@ horário.</i>
 
 <h3> Author </h3>
  
- Lucas Alkimim Chaves
+ Lucas Alkimim Chaves.
  Email para contato: l239799@dac.unicamp.br
 
